@@ -279,7 +279,8 @@
     const FuelCount= displayWordCount("Fuel development to improve internal combustion engine");
     const ConclusionCount= displayWordCount("Conclusion");
     // Calculate the sum of all selected sections
-    const totalWordCount = IntroductionCount + AbstractCount + InnovationsCount + FuelCount + ConclusionCount;
+    const totalWordCount = IntroductionCount 
+      //+ AbstractCount + InnovationsCount + FuelCount + ConclusionCount;
     
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
