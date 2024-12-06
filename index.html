@@ -259,7 +259,6 @@
 <p id="totalWordCount"></p>
 <hr>
 <script>
-  <div id="word-count">Word Count: </div>
   // Function to calculate and display word count for a specified section
   function displayWordCount(sectionId, outputId) {
     // Get the text content from the specified section
@@ -274,11 +273,11 @@
   // Function to calculate and display total word count from selected sections
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
-    const IntroductionCount = displayWordCount("Introduction_InText");
-    const  AbstractCount= displayWordCount("Abstract_InText");
-    const InnovationsCount= displayWordCount("Innovations used on internal combustion engine (ICEs)_Intext");
-    const FuelCount= displayWordCount("Fuel development to improve internal combustion engine_Intext");
-    const ConclusionCount= displayWordCount("Conclusion_Intext");
+    const IntroductionCount = displayWordCount("Introduction");
+    const  AbstractCount= displayWordCount("Abstract");
+    const InnovationsCount= displayWordCount("Innovations used on internal combustion engine (ICEs)");
+    const FuelCount= displayWordCount("Fuel development to improve internal combustion engine");
+    const ConclusionCount= displayWordCount("Conclusion");
     // Calculate the sum of all selected sections
     const totalWordCount = IntroductionCount + AbstractCount + InnovationsCount + FuelCount + ConclusionCount;
     // Display the total word count
