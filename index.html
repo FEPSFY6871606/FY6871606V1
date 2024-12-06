@@ -96,10 +96,7 @@
       </p>
   <hr>
     <h3 id="Introduction">Introduction</h3>
-    <pre id="Introduction"></pre>
-    <p class="ex1">
-
-      <pre>
+    <pre id="Introduction_InText" class="ex1">
         The internal combustion engines have been a cornerstone of global development, as it has connected 
         distant lands and accelerated economic growth across continents through trade. As Internal
         combustion engines are a very important part of modern society, but lead to air quality to decline, 
@@ -111,14 +108,11 @@
         valve and lastly fuel development. what innovations have been taken to insure more refined and 
         improved internal combustion engines?
       </pre>
-  </p>
     
 <hr>
     <h3 id="Innovations used on internal combustion engine (ICEs)">Innovations used on internal combustion engine (ICEs)</h3>
-    <pre id="Innovations used on internal combustion engine (ICEs)"></pre>
-    <p class="ex1">
-      
-      <pre>
+    <pre id="Innovations" class="ex1">
+     
       Internal combustion engine are the main propulsion systems on the road and in the sky, which, in Mid-
       2017 Serrano mentioned, to the impossibility of replacing them as the power plant in most vehicles
       Due to the pollution caused by ICEs is mainly greenhouse gasses which contribute to climate change 
@@ -146,13 +140,10 @@
       collisions therefore increasing the rate of reaction and limiting the emissions further, helping to 
       increase and better the air quality.
   </pre>
-  </p>
       
     <hr>
     <h3 id="Fuel development to improve internal combustion engine">Fuel development to improve internal combustion engine</h3>
-    <pre id="Fuel development to improve internal combustion engine"></pre>
-    <p class="ex1">
-      <pre>
+    <pre id="Fuel" class="ex1>
         Fuel development has come a long way by creating alternative fuels (like hydrogen and synthetic fuel) 
         and biofuels. Biofuels like biomethane are being used to reduce the emission of co2. Biomethane is 
         produced by decomposition of organic matter like crops, food waste, sewage and manure (Folkson, 
@@ -164,13 +155,12 @@
         the pollution and emission problem as alternative fuels can be used with in a city to reduce the direct 
         effect of pollution on human being and furthermore this will Improve the air quality. 
       </pre>
-  </p>
+  
     
     <hr>
     <h3 id="Conclusion">Conclusion</h3>
-    <pre id="Conclusion"></pre>
-    <p class="ex1">
-      <pre>
+    <pre id="Conclusion1"class="ex1">
+  
         In conclusion, internal combustion engines have been improved to be more efficient and cleaner by 
         adopting intervention like variable valve timings to improve air flow leading to improved performance of 
         the machine. Furthermore, other technology like supercharging and turbocharging this allows improved 
@@ -183,7 +173,7 @@
         So, in my opinion the internal combustion engine has been improved a lot to limit the trade-off using 
         them in the mordent society.
       </pre>
-  </p>
+  
 
     <hr>
     <h3 id="References">References</h3>
@@ -273,13 +263,12 @@
   // Function to calculate and display total word count from selected sections
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
-    const IntroductionCount = displayWordCount("Introduction");
-    const InnovationsCount= displayWordCount("Innovations used on internal combustion engine (ICEs)");
-    const FuelCount= displayWordCount("Fuel development to improve internal combustion engine");
-    const ConclusionCount= displayWordCount("Conclusion");
+    const IntroductionCount = displayWordCount("Introduction_InText");
+    const InnovationsCount = displayWordCount("Innovations");
+     const FuelCount = displayWordCount("Fuel");
+      const ConclusionCount = displayWordCount("Conclusion1");
     // Calculate the sum of all selected sections
     const totalWordCount = IntroductionCount + InnovationsCount + FuelCount + ConclusionCount;
-    
     document.getElementById("totalWordCount").innerText = `Total word count: ${totalWordCount}`;
   }
   // Run the function for specific sections and display total count when the page loads
